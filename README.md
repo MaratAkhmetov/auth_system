@@ -10,7 +10,7 @@
 ## Запуск
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/MaratAkhmetov/auth_system.git
 cd auth_system
 python -m venv venv
 venv\Scripts\activate       # Windows
