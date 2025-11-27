@@ -1,0 +1,141 @@
+[
+  {
+    "model": "users.role",
+    "pk": 1,
+    "fields": {
+      "name": "admin"
+    }
+  },
+  {
+    "model": "users.role",
+    "pk": 2,
+    "fields": {
+      "name": "manager"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "first_name": "Admin",
+      "last_name": "User",
+      "email": "admin@example.com",
+      "password_hash": "pbkdf2_sha256$1000000$QJBwntS4pEDJdqGeuIkjBu$uK3pUVNselN4TlapuU15xKDYPf7xxdecd/wXlt1+Lu8=",
+      "role": 1,
+      "is_active": true,
+      "created_at": "2025-11-27T00:00:00Z",
+      "updated_at": "2025-11-27T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.businesselement",
+    "pk": 1,
+    "fields": {
+      "name": "Clients"
+    }
+  },
+  {
+    "model": "users.businesselement",
+    "pk": 2,
+    "fields": {
+      "name": "Orders"
+    }
+  },
+  {
+    "model": "users.businesselement",
+    "pk": 3,
+    "fields": {
+      "name": "Products"
+    }
+  },
+  {
+    "model": "users.accessrolesrules",
+    "pk": 1,
+    "fields": {
+      "role": 1,
+      "element": 1,
+      "read_permission": true,
+      "read_all_permission": true,
+      "create_permission": true,
+      "update_permission": true,
+      "update_all_permission": true,
+      "delete_permission": true,
+      "delete_all_permission": true
+    }
+  },
+  {
+    "model": "users.accessrolesrules",
+    "pk": 2,
+    "fields": {
+      "role": 1,
+      "element": 2,
+      "read_permission": true,
+      "read_all_permission": true,
+      "create_permission": true,
+      "update_permission": true,
+      "update_all_permission": true,
+      "delete_permission": true,
+      "delete_all_permission": true
+    }
+  },
+  {
+    "model": "users.accessrolesrules",
+    "pk": 3,
+    "fields": {
+      "role": 1,
+      "element": 3,
+      "read_permission": true,
+      "read_all_permission": true,
+      "create_permission": true,
+      "update_permission": true,
+      "update_all_permission": true,
+      "delete_permission": true,
+      "delete_all_permission": true
+    }
+  },
+  {
+    "model": "users.accessrolesrules",
+    "pk": 4,
+    "fields": {
+      "role": 2,
+      "element": 1,
+      "read_permission": true,
+      "read_all_permission": false,
+      "create_permission": false,
+      "update_permission": false,
+      "update_all_permission": false,
+      "delete_permission": false,
+      "delete_all_permission": false
+    }
+  },
+  {
+    "model": "users.accessrolesrules",
+    "pk": 5,
+    "fields": {
+      "role": 2,
+      "element": 2,
+      "read_permission": true,
+      "read_all_permission": false,
+      "create_permission": false,
+      "update_permission": false,
+      "update_all_permission": false,
+      "delete_permission": false,
+      "delete_all_permission": false
+    }
+  },
+  {
+    "model": "users.accessrolesrules",
+    "pk": 6,
+    "fields": {
+      "role": 2,
+      "element": 3,
+      "read_permission": true,
+      "read_all_permission": false,
+      "create_permission": false,
+      "update_permission": false,
+      "update_all_permission": false,
+      "delete_permission": false,
+      "delete_all_permission": false
+    }
+  }
+]
